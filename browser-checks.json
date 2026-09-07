@@ -1,0 +1,90 @@
+[
+  {
+    "width": 1440,
+    "overflow": false,
+    "images": true,
+    "brokenAnchors": 0
+  },
+  {
+    "width": 1024,
+    "overflow": false,
+    "images": true,
+    "brokenAnchors": 0
+  },
+  {
+    "width": 768,
+    "overflow": false,
+    "images": true,
+    "brokenAnchors": 0
+  },
+  {
+    "width": 390,
+    "overflow": false,
+    "images": true,
+    "brokenAnchors": 0
+  },
+  {
+    "width": 320,
+    "overflow": false,
+    "images": true,
+    "brokenAnchors": 0
+  },
+  {
+    "check": "layers-default",
+    "buttonsPressed": true,
+    "noDataOff": true,
+    "allVisible": true,
+    "groupCount": 5
+  },
+  {
+    "check": "layer-toggle",
+    "off": {
+      "pressed": "false",
+      "dataOff": "pv",
+      "pvHidden": true,
+      "arhStillVisible": true
+    },
+    "back": {
+      "pressed": "true",
+      "dataOff": null,
+      "pvVisible": true
+    }
+  },
+  {
+    "check": "layers-additive",
+    "both": {
+      "dataOff": "pv elt",
+      "pvHidden": true,
+      "eltHidden": true,
+      "othersVisible": true
+    },
+    "one": {
+      "dataOff": "elt",
+      "pvBack": true,
+      "eltStillHidden": true
+    },
+    "cleared": true
+  },
+  {
+    "check": "other-drawings",
+    "dwg-elev": {
+      "layer": "arh",
+      "hidden": true,
+      "restored": true
+    },
+    "dwg-el": {
+      "layer": "arh",
+      "hidden": true,
+      "restored": true
+    }
+  },
+  {
+    "check": "menu-and-form",
+    "menuOpens": true,
+    "menuCloses": true,
+    "serviceSelects": true,
+    "emptyShowsError": true,
+    "ariaInvalid": true,
+    "errorClears": true
+  }
+]

@@ -61,6 +61,16 @@ Pakalpojuma karte automātiski izvēlas attiecīgo pakalpojumu formā. Forma pā
 
 ## Pārbaudes
 
-`node --check app.js` pārbauda JavaScript sintaksi. Priekšskati `desktop-preview.png` (1425 px) un `mobile-preview.png` (390 px) uzņemti ar Chromium bezgalvas režīmā no lokāla servera.
+`node --check app.js` pārbauda JavaScript sintaksi.
+
+`check-browser.mjs` pārbauda lapu īstā pārlūkā pa DevTools portu 9333 un raksta `browser-checks.json`. Pārbauda horizontālo pārpildi platumos 1440, 1024, 768, 390 un 320, attēlu ielādi, iekšējās saites, mobilo izvēlni un formas validāciju. Galvenais — slāņu slēdžus: ka sākumā visi pieci slāņi ir redzami un `data-off` nav uzstādīts, ka viena slāņa izslēgšana paslēpj tieši to grupu un pārējās atstāj redzamas, ka divu slāņu izslēgšana ir **uzklājama** (abi pazūd, pārējie paliek, un viena atgriešana neatgriež otru), un ka tas pats strādā arī fasādes un elektroshēmas rasējumos.
+
+```
+python3 -m http.server 8751 --bind 127.0.0.1 --directory .
+chromium --headless --remote-debugging-port=9333 about:blank
+node check-browser.mjs
+```
+
+Priekšskati `desktop-preview.png` (1425 px) un `mobile-preview.png` (390 px) uzņemti ar Chromium bezgalvas režīmā no tā paša servera.
 
 `robots.txt` un `<meta name="robots">` tur lapu ārpus meklētājiem, jo tajā ir uzņēmuma īstie kontakti un tā vēl nav apstiprināta publiskošanai.

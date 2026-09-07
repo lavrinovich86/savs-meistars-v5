@@ -398,13 +398,13 @@ p:last-child { margin-bottom: 0; }
   align-items: center;
   gap: 9px;
   min-width: 0;
-  padding: 12px 13px;
+  padding: 12px 11px;
   background: none;
   border: 0;
   border-right: 1px solid var(--line);
   color: var(--muted);
   font: inherit;
-  font-size: .76rem;
+  font-size: .72rem;
   text-align: left;
   cursor: pointer;
 }
@@ -424,7 +424,7 @@ p:last-child { margin-bottom: 0; }
 .layer[aria-pressed="false"] .swatch { background: none; }
 .layer[aria-pressed="true"] { color: var(--ink); }
 
-.layer .code { font-family: PlexMono, monospace; letter-spacing: .06em; }
+.layer .code { font-family: PlexMono, monospace; letter-spacing: .05em; white-space: nowrap; }
 .layer .nm { color: var(--muted); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 .layer[aria-pressed="false"] .nm { color: var(--muted-2); }
 
